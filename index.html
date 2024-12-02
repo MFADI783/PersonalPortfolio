@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="new-script.js"></script>
+    <script src="https://kit.fontawesome.com/a42e479080.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo (1).png" class="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"> </i>
+                </ul>
+                <i class="fas fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Web Developer</p>
+                <h1>
+                    Hi! I am <span>Muhammad Fawad</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="User (2) (1).jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Muhammad Fawad, a 19-year-old from Rawalpindi, Pakistan. 
+                 I have a strong educational foundation and practical experience in computer engineering,
+                  demonstrated through various projects, including an automatic hand wash system,anti-sleep glasses
+                for drivers, a motion detector with a bulb, and a comprehensive C++ project on an automatic car
+             parking system. I am currently pursuing a Bachelor's degree in Computer Engineering at Bahria
+               University. Additionally, I am proficient in MS Office, LaTeX, Proteus simulation, 
+                  ISE Suite Design, and programming languages such as C, C++, Java, and frontend web development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Web Development</li>
+                            <li><span>Web Designing</span><br>Designing Web Interface</li>
+                            <li><span>Embedded Systems</span><br>Designing Hardware Systems</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Worked as a Junior Developer...</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Currently pursuing a Bachelor in Computer Engineering</li>
+                            <li><span>2023</span><br>Intermediate from RCC&S</li>
+                            <li><span>2021</span><br>Matriculation from Sadeq Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p> I am Muhammad Fawad, a creative web designer specializing in crafting visually appealing, 
+                         user-friendly, and responsive website design. My focus is on delivering clean layouts, 
+                         intuitive interfaces,and impactful digital experiences.</p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>  
+
+                        We offer a range of services to bring your web vision to life, including <b>responsive web design</b>
+                        to ensure your site looks great on any device, <b>front-end development</b> to build interactive and dynamic
+                        user interfaces, and <b>UI & UX designer</b> to create seamless and engaging user experiences. Additionally, we 
+                        provide <b>website maintenance</b> to keep your site running smoothly with regular updates and optimizations.</p>
+                         <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Auto.jpg" width="350" height="250" >
+                    <div class="layer">
+                        <h3>Automated Car parking System
+
+                        </h3>
+                        <p><b>Automated Car Parking System</b>  
+                            We developed an automated car parking system in C++ using procedural programming.
+                            The system efficiently manages parking operations, including car entry, exit, and
+                            slot allocation, focusing on logical workflows and data handling.</p>
+                            <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Project 2.jpeg" width="350" height="250"  >
+                    <div class="layer">
+                        <h3>Employess Management System</h3>
+                        <p> <b>Employee Management System (EMS)</b> 
+                            We developed anin Java to efficiently handle employee data and streamline HR processes.
+                             The system manages employee records, tracks attendance, processes payroll, and 
+                             facilitates leave management, making it suitable for organizations of all sizes.</p>
+                             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" width="350" height="250"  >
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p><b>front-end web developer</b>  
+                            As a front-end web developer, I specialize in creating responsive, interactive, and 
+                            visually appealing user interfaces. By utilizing technologies like HTML, CSS, and
+                             JavaScript. My focus is on delivering dynamic, cross-browser compatible. 
+                            </p>
+                              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+            
+                </div>
+            </div>
+            <a href="#"class = "btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>muhammadfawad7869@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+920310648218</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100079719037840&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/muhammadfawad.mf/profilecard/?igsh=MTdmOWdmbGwwNXE5eg=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@muhammad.fawad40?_r=1&_d=e9hfe7g4l0f20l&sec_uid=MS4wLjABAAAA_BEWZCB1cONAMPgrpTJw-trOMtB0LE20LEqxN5byVCBVBLfTMDOtdnAJayerZBZh&share_author_id=7279480037651776517&sharer_language=en&source=h5_m&u_code=ea407b54cmjl97&timestamp=1733051811&user_id=7279480037651776517&sec_user_id=MS4wLjABAAAA_BEWZCB1cONAMPgrpTJw-trOMtB0LE20LEqxN5byVCBVBLfTMDOtdnAJayerZBZh&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7338495629335889669&share_link_id=3c29bd3e-6049-4fc9-bffc-8357dcff7a07&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-fawad-4730a4294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Internship Student.pdf" download class="btn btn2">Download Cv</a>
+
+                </div>
+                <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name ="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+                <spani id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © Muhammad Fawad.All rights reserved.2024</p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script> <!-- Linked JS File -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbypfoA3mLt6s2S38Xj1jef3xcKFz70SuSutb7gXBj5iRiSNsuTb_mBCyqAjQyuhVAvNTg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg,innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+
+
